@@ -1,0 +1,6 @@
+az login
+
+az group create --name lab1 --location southindia
+
+
+az group deployment create --name job1 --template-file template.json --resource-group lab1 --parameters @parameters.json
